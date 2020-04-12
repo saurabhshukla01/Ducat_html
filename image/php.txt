@@ -1,0 +1,231 @@
+PHP : PHP is stand for hypertext pre processor. server side scripting language which used for developed dynamic websites. It was developed by Rasmus Lerdrof around 1994.
+
+Extension : .php
+
+Advantage
+*	open source(source code can change)
+*	multiplatform(win,linux,mac)
+*	support many databases (e.g mysql, oracle etc)
+* 	support many web servers (e.g. apache, iis etc)
+* 	easy to use, light weight, fast processing
+* 	support opps features
+
+
+
+php
+xampp (Cross)
+wamp  (windows)
+lamp  (linx)
+mamp  (mac)
+
+
+
+xampp download from apachefriends.org
+install
+
+xampp control panel	( start apache and mysql )
+
+
+
+save file
+	c://xampp/htdocs/folder/filename.php	
+e.g.
+	c://xampp/htdocs/06pm/first.php
+
+	
+	
+code
+-----
+-----
+-----
+
+
+Run	(browser)
+http://localhost/06pm/first.php
+or
+localhost/06pm/first.php
+
+
+-----------------------------------------------------
+
+
+Tags(Delimeters)
+
+1 standard tag
+	<?php
+	
+	?>
+	
+2 short tag
+	<?
+	
+	?>
+
+3 Asp tag
+	<%
+	
+	%>
+
+
+
+
+
+
+
+for output on screen
+
+	echo	
+		* fast processing
+		* it can execute multiple statement
+			e.g.
+				echo "","","";
+				echo  "Hello","Ducat";
+	
+	print
+		* slow processing
+		* it can execute only single statement
+			e.g.
+				print "";
+				print  "Hello";
+	
+	
+	
+concatination ( . )
+
+	echo	"Hello"."Ducat";
+	print   "Hello"."Ducat";
+	
+
+	
+	
+
+new line
+	<br> (webpage)
+	\n	 (file)
+
+	
+
+echo "Hello <br> PHP";
+print "Hello <br> PHP";
+echo "<h1>India</h1>";
+
+
+
+
+
+comments
+
+	//		single line comments
+	#		single line comments
+	
+	
+	/*
+			
+			multiple line comments
+	
+	*/
+
+
+
+
+	
+variable : it is a temporary memory location which used for hold the information. the value of variable can vry(change) at run time.
+
+Rules for declare variable
+* start from $ sign
+* continue with a-zA-Z_
+* can combination a-zA-Z0-9
+
+e.g.
+	$a;
+	$D;
+	$5;		wrong
+	$_A;
+	$a5;
+	$5a;	wrong
+	
+	
+$a = 5;
+echo $a;
+
+
+$b = "India";	
+echo $b;
+
+
+
+
+
+
+
+Data Types : in php data types allocate automatically at run time.
+
+	int, string, double, array, object , resource, boolean, null
+
+
+check data type
+	gettype(var name)		show only data type
+	var_dump(var name)		print, show data type and value
+
+e.g.	
+
+	$a = 5;
+	echo gettype($a);
+	var_dump($a);
+	
+	
+	
+
+
+
+
+
+e.g 
+	$x = 5;
+	echo "value of x is ".$x;
+
+	
+e.g.
+	$a = 5;
+	$b = 3;
+	echo "value of a is ".$a." and value of b is ".$b;
+
+	
+	
+e.g.
+
+	$z = 8;
+
+	echo "value of z = ".$z;		(value of z is 8)
+	echo "value of z = $z";			(value of z is 8)
+	echo 'value of z = $z';			(value of z is $z)
+	
+
+
+	
+Constant : it is a temporary memory location which used for hold the information. the value of constant can not vry(change) at run time.
+	
+	defined("constant name","value");
+	const constantname = value;
+	
+	Rules for define constant name
+		* always start from a-zA-Z_
+		* can use a-zA-Z0-9
+		
+	e.g
+		define("HOST","Localhost");
+		or
+		const HOST = "Localhost";
+		
+		echo HOST;
+		
+	e.g.
+		define("A","India");		
+		or 
+		const A = "India";
+		
+		echo A;
+	
+		
+		
+		

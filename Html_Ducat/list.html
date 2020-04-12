@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ducat List Html</title>
+</head>
+<body>
+
+    <!-- 
+
+        List : List is collection of items .
+        List has two type 
+        1. unordered list ( which items not define order is called unorderd list)
+            like : (desc , circle , square ) by default desc.
+            ex :  items ==>   
+            * coffee 
+            * Tea 
+            * Milk
+
+            this is called unordered list , beacause user not know which item order what is ?.
+
+
+        2. ordered list ( which items define order is called orderd list)
+            like : (1,a,A,I,i) by default 1.
+            ex :  items ==>   
+            1 coffee 
+            2 Tea 
+            3 Milk'
+
+        3) Nested List :  list inside create a list is called nested list.
+
+            Like : 
+
+                course 
+                    1) PHP
+                    2) HTML
+                    3) CSS
+                Fees
+                    * 5000
+                    * 5000
+                    * 8000
+
+    -->
+
+    <!-- 1) ordered list -->
+    <ol>
+        <li>css</li>
+        <li>Html</li>
+        <li>Php</li>
+    </ol>
+    <!-- 2) ordered list type is set (like I, A, a ,i , By default 1 ) -->
+    <ol type="A">
+        <li>css</li>
+        <li>Html</li>
+        <li>Php</li>
+    </ol>
+    <ol type="I">
+        <li>css</li>
+        <li>Html</li>
+        <li>Php</li>
+    </ol>
+    <!-- If user want the item is started with 4 then used this one  -->
+    <ol start="4">
+        <li>css</li>
+        <li>Html</li>
+        <li>Php</li>
+    </ol>
+    <!-- If user want the item is started with D then used this one (start-"D") not effected so start="4" and type ="A" -->
+    <ol type="A" start="4">
+        <li>css</li>
+        <li>Html</li>
+        <li>Php</li>
+    </ol>
+    <ol type="i" start="4">
+        <li>css</li>
+        <li>Html</li>
+        <li>Php</li>
+    </ol>
+
+
+
+    <hr color="orange" size="5" width="80%">
+
+
+    <!-- 1) unordered list -->
+    <ul>
+        <li>css</li>
+        <li>Html</li>
+        <li>Php</li>
+    </ul>
+    <!-- 2) uordered list type is set (like desc , circle , square By default desc ) -->
+    <ul type="circle">
+        <li>css</li>
+        <li>Html</li>
+        <li>Php</li>
+    </ul>
+    <ul type="square">
+        <li>css</li>
+        <li>Html</li>
+        <li>Php</li>
+    </ul>
+
+
+    <hr color="orange" size="5" width="80%">
+
+
+    <!-- Nested List in html files  -->
+
+    <ul>
+        <li>Course</li>
+            <ol type="i">
+                <li>Php</li>
+                <li>Css</li>
+                <li>Html</li>
+            </ol>
+
+        <li>Fees</li>
+            <ul type="square">
+                <li>5000</li>
+                <li>6000</li>
+                <li>7000</li>
+            </ul>
+    </ul>
+
+</body>
+</html>
